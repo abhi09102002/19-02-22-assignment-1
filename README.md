@@ -1,1 +1,12 @@
-# 19-02-22-assignment-1
+def myprime(n):
+    for i in range(2,n):
+        if n%i==0:
+            return False
+        return True
+t=int(input())
+for i in range(t):
+    n=int(input())
+    c=0
+    for i in range(2,n+1):
+        if myprime(i):
+         print(c)
